@@ -1,0 +1,195 @@
+
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+
+body{font-family:Arial,sans-serif;color:#fff;background:#0f172a}
+
+nav{position:fixed;top:0;width:100%;display:flex;justify-content:space-between;padding:20px 8%;background:rgba(0,0,0,.35)}
+
+ul{display:flex;gap:20px;list-style:none}
+.hero{
+
+    height:100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+    url("../123.jpeg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+}
+
+.content h1{font-size:3.5rem}
+
+.btn{display:inline-block;margin-top:20px;padding:15px 30px;background:#d4af37;color:#111;text-decoration:none;border-radius:40px}
+
+.sobre,
+
+.cards{padding:80px 8%}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+
+.card{background:#1e293b;padding:40px;border-radius:16px}
+
+.sobre{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:80px;
+
+    padding:120px 8%;
+
+    background:#081420;
+
+}
+
+.sobre-img{
+
+    flex:1;
+
+}
+
+.sobre-img img{
+
+    width:100%;
+
+    max-width:600px;
+
+    border-radius:25px;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.4);
+
+}
+
+.sobre-texto{
+
+    flex:1;
+
+}
+
+.sobre-texto h2{
+
+    font-size:52px;
+
+    color:#D4AF37;
+
+    margin-bottom:25px;
+
+}
+
+.sobre-texto span{
+
+    color:#D4AF37;
+
+}
+
+.sobre-texto p{
+
+    font-size:20px;
+
+    color:#D4AF37;
+
+    line-height:1.8;
+
+    margin-bottom:30px;
+
+}
+
+.sobre-texto ul{
+
+    list-style:none;
+
+    margin-bottom:40px;
+
+}
+
+.sobre-texto li{
+
+    margin-bottom:15px;
+
+    font-size:18px;
+
+    color:#D4AF37;
+
+}
+footer{
+background:#222;
+color:white;
+padding:50px;
+text-align:center;
+}
+
+.whatsapp{
+
+    position:fixed;
+
+    right:30px;
+
+    bottom:30px;
+
+    width:75px;
+
+    height:75px;
+
+    background:#25D366;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-decoration:none;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
+
+    z-index:9999;
+
+}
+
+.whatsapp i{
+
+    font-size:42px;
+
+    color:#fff;
+
+    line-height:1;
+
+}
+
+.whatsapp:hover{
+
+    transform:scale(1.12);
+
+}
+@media(max-width:900px){
+}
+
+
+
+
+
+footer{text-align:center;padding:30px;background:#111827}
+
+
+
+
