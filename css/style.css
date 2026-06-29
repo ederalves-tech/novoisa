@@ -1,195 +1,170 @@
-
-
+/* ==================== ESTILOS GERAIS ==================== */
 *{margin:0;padding:0;box-sizing:border-box}
-
 
 body{font-family:Arial,sans-serif;color:#fff;background:#0f172a}
 
-nav{position:fixed;top:0;width:100%;display:flex;justify-content:space-between;padding:20px 8%;background:rgba(0,0,0,.35)}
+/* ==================== MENU E NAVEGAÇÃO ==================== */
+nav{position:fixed;top:0;width:100%;display:flex;justify-content:space-between;padding:20px 8%;background:rgba(0,0,0,.35);z-index: 1000;}
 
 ul{display:flex;gap:20px;list-style:none}
+
+/* ==================== HERO (TOPO) ==================== */
 .hero{
-
     height:100vh;
-
-    background:
-    linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
-    url("../123.jpeg");
-
+    background: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)), url("../123.jpeg");
     background-size:cover;
-
     background-position:center;
-
     background-repeat:no-repeat;
-
     display:flex;
-
     align-items:center;
-
     justify-content:center;
-
     text-align:center;
-
 }
 
 .content h1{font-size:3.5rem}
 
 .btn{display:inline-block;margin-top:20px;padding:15px 30px;background:#d4af37;color:#111;text-decoration:none;border-radius:40px}
 
-.sobre,
-
-.cards{padding:80px 8%}
-
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
-
-.card{background:#1e293b;padding:40px;border-radius:16px}
-
+/* ==================== SEÇÃO SOBRE ==================== */
 .sobre{
-
     display:flex;
-
     align-items:center;
-
     justify-content:space-between;
-
     gap:80px;
-
     padding:120px 8%;
-
     background:#081420;
-
 }
 
-.sobre-img{
-
-    flex:1;
-
-}
+.sobre-img{flex:1}
 
 .sobre-img img{
-
     width:100%;
-
     max-width:600px;
-
     border-radius:25px;
-
     box-shadow:0 25px 60px rgba(0,0,0,.4);
-
 }
 
-.sobre-texto{
-
-    flex:1;
-
-}
+.sobre-texto{flex:1}
 
 .sobre-texto h2{
-
     font-size:52px;
-
     color:#D4AF37;
-
     margin-bottom:25px;
-
 }
 
-.sobre-texto span{
-
-    color:#D4AF37;
-
-}
+.sobre-texto span{color:#D4AF37}
 
 .sobre-texto p{
-
     font-size:20px;
-
     color:#D4AF37;
-
     line-height:1.8;
-
     margin-bottom:30px;
-
 }
 
 .sobre-texto ul{
-
     list-style:none;
-
     margin-bottom:40px;
-
+    display: block; /* reset para o padrão */
 }
 
 .sobre-texto li{
-
     margin-bottom:15px;
-
     font-size:18px;
-
     color:#D4AF37;
-
-}
-footer{
-background:#222;
-color:white;
-padding:50px;
-text-align:center;
 }
 
+/* ==================== CARDS ==================== */
+.cards{padding:80px 8%; display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+
+.card{background:#1e293b;padding:40px;border-radius:16px}
+
+/* ==================== CONTAINER ADICIONAL ==================== */
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+/* ==================== FOOTER ==================== */
+footer{text-align:center;padding:30px;background:#111827;color:white}
+
+/* ==================== WHATSAPP ==================== */
 .whatsapp{
-
     position:fixed;
-
     right:30px;
-
     bottom:30px;
-
     width:75px;
-
     height:75px;
-
     background:#25D366;
-
     border-radius:50%;
-
     display:flex;
-
     align-items:center;
-
     justify-content:center;
-
     text-decoration:none;
-
     box-shadow:0 10px 25px rgba(0,0,0,.35);
-
     z-index:9999;
-
 }
 
-.whatsapp i{
+.whatsapp i{font-size:42px;color:#fff;line-height:1}
 
-    font-size:42px;
+.whatsapp:hover{transform:scale(1.12)}
 
-    color:#fff;
 
-    line-height:1;
+/* ======================================================== */
+/* ======= REGRAS ESPECÍFICAS PARA CELULAR (RESPONSIVO) ==== */
+/* ======================================================== */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        padding: 15px 5%;
+    }
 
+    nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .content h1 {
+        font-size: 2.2rem;
+    }
+
+    .sobre {
+        flex-direction: column;
+        gap: 40px;
+        padding: 60px 5%;
+        text-align: center;
+    }
+
+    .sobre-texto h2 {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+
+    .sobre-texto p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .sobre-texto ul {
+        text-align: left;
+        display: inline-block;
+    }
+
+    .whatsapp {
+        width: 60px;
+        height: 60px;
+        right: 20px;
+        bottom: 20px;
+    }
+
+    .whatsapp i {
+        font-size: 32px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
 }
-
-.whatsapp:hover{
-
-    transform:scale(1.12);
-
-}
-@media(max-width:900px){
-}
-
-
-
-
-
-footer{text-align:center;padding:30px;background:#111827}
-
-
-
-
